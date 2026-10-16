@@ -368,7 +368,7 @@ jobs:
         with:
           name: eval-${{ matrix.suite.name }}
           path: ~/.gstack-dev/evals/*.json
-          retention-days: 90
+          retention-days: 7
 
   report:
     runs-on: ubicloud-standard-2
