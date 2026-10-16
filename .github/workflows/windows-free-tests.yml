@@ -126,6 +126,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v7
         with:
+          retention-days: 7
           name: windows-free-test-shard-logs
           path: ${{ runner.temp }}/gstack-free-test-*.log
           if-no-files-found: ignore
